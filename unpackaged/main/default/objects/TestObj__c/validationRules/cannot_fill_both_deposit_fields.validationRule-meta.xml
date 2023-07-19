@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cannot_fill_both_deposit_fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(!ISBLANK(Deposit__c), !ISBLANK(Deposit_2__c))</errorConditionFormula>
+    <errorMessage>Only one deposit field can be filled in!</errorMessage>
+</ValidationRule>
